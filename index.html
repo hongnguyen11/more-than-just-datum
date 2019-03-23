@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Datum</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700" rel="stylesheet">
@@ -16,10 +16,9 @@
       <img class="logo island-1-2 unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4" src="images/logo.svg" alt="">
       <div class="island-1-2 unit unit-xs-1 unit-s-1 unit-m-3-4 unit-l-3-4 search-bar">
         <img class="glass" src="images/search.svg" alt="">
-        <input class="frame" type="search" name="search">
-
+        <label for="frame"></label>
+        <input id="frame" type="search" name="search" required>
       </div>
-
     </header>
 
     <div class="body grid">
@@ -51,8 +50,9 @@
       </div>
 
       <div class="table-wrapper scrollable table island-1-2 unit unit-xs-1 unit-s-1 unit-m-3-4 unit-l-3-4">
-        <h1 class="push-1-2 tera pad-t-1-2">Playgrounds in the city</h1>
+        <h2 class="push-1-2 tera pad-t-1-2">Playgrounds in the city</h1>
         <table>
+          <caption class="hidden">Playground Finder</caption>
           <thead class="bold">
             <tr>
               <th class="id" scope="col">Park ID</th>
